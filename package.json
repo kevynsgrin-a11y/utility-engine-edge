@@ -1,0 +1,25 @@
+{
+  "name": "utility-engine-edge",
+  "version": "1.0.0",
+  "description": "Utility Engine Edge Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "db:migrate:remote": "wrangler d1 migrations apply DB --remote"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.32.0",
+    "hono": "^4.4.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "drizzle-kit": "^0.22.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.57.1"
+  }
+}
