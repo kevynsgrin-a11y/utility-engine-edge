@@ -1,6 +1,11 @@
 node_modules/
 .wrangler/
 .env
+.env.local
 dist/
 *.log
+.DS_Store
+*.local
+.vscode/
+.idea/
 .dev.vars
